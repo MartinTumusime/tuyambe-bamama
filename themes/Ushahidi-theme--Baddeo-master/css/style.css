@@ -1,0 +1,551 @@
+a {
+   text-decoration: none;
+   outline: none;
+}
+
+a:hover {
+   text-decoration: none;
+   opacity: .7;
+}
+
+a:link, 
+a:visited {
+   color: #fff;
+}
+
+a img {
+   border: none;
+}
+
+/* --------------------------- BASICS */
+
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+body {
+   color: #e6e6e6;
+   text-align: center;
+   font: normal 83%/1.2 Helvetica Neue, Helvetica, Arial, sans-serif;
+   background: rgba(0,0,0,.85);
+}
+
+.nodisplay {
+   display: none;
+}
+
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {clear:both;}
+
+/* For IE 6/7 */
+.cf {zoom:1;}
+
+.center {
+   margin: 0 3.125%;
+}
+
+[class^="col_"], [class*=" col_"] {
+   margin: 0 3.125%;
+}
+
+h1, h2, h3, h4, h5 {
+   color: #fff;
+   margin: 0;
+}
+
+/* --------------------------- GLOBAL HEADER */
+
+header {display: none;}
+
+header#global-header {
+   display: block;
+}
+
+header#global-header hgroup {
+   padding: 3.125% 0;
+}
+
+header#global-header hgroup h1 {
+   font-size: 2em;
+}
+
+header#global-header hgroup h2 {
+   color: #e6e6e6;
+   font-weight: normal;
+   font-size: 1.3em;
+   padding-top: 5px;
+}
+
+
+header#global-header #site-data,
+header#global-header nav#global-menu ul {
+   display: none;
+}
+
+header#global-header nav#global-menu {
+   float: left;
+   margin-bottom: 10px;
+}
+
+header#global-header nav#global-menu select {
+   width: 100px;
+   padding: 3px;
+}
+
+header#global-header #global-search {
+   float: right;
+}
+
+header#global-header #global-search .language-box {
+   margin: 0;
+}
+
+header#global-header #global-search .language-box select {
+   width: 90%;
+   color: #222222;
+   padding: 3px;
+}
+
+header#global-header #global-search .search-form {
+   margin: 0;
+}
+
+header#global-header #global-search .search-form input.text {
+   width: 120px;
+   -moz-box-sizing: border-box; 
+   -webkit-box-sizing: border-box; 
+   box-sizing: border-box;
+   padding: 3px;
+}
+
+header#global-header #global-search .search-form input.searchbtn {
+   border: none;
+   margin-top: 2px;
+   margin-left: -27px;
+}
+
+/* --------------------------- CONTENT */
+
+#content .center {
+   background: #404040;
+}
+
+#content #map-container {
+   background: black;
+}
+
+#content #map {
+   height: 300px;
+}
+
+#content #map-controls {
+   padding: 1px 0;
+}
+
+#content #map-controls > div {
+   text-align: left;
+   margin: 3.125%;
+}
+
+/* --------------------------- FILTERS */
+
+ul.filters {
+   margin: 10px 0;
+}
+
+ul.filters li a {
+   display: inline-block;
+   padding: 5px 10px;
+}
+
+ul.filters li a.active {
+   background: rgba(0,0,0,.2);
+}
+
+ul.filters li a span.swatch {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border: 1px solid #333333;
+   margin-right: 5px;
+}
+
+/* --------------------------- MODULES */
+
+.module {
+   text-align: left;
+   margin: 3.125% 0;
+}
+
+.module h1 {
+   color: #fff;
+   font-size: 1.2em;
+   text-transform: uppercase;
+   border-bottom: 1px dotted rgba(256,256,256,.5);
+   padding: 3.125% 0;
+   margin-bottom: 3.125%;
+}
+
+.module h2 {
+   color: #e6e6e6;
+   font-size: 1em;
+}
+
+.module h2 a {
+   color: rgba(256,256,256,1);
+}
+
+.module h2 a:after {
+   content: ' >';
+}
+
+.module p {
+   font-size: 1.2em;
+   padding: 10px 3.125%;
+}
+
+.module ul {
+   font-size: 1.2em;
+   padding: 10px 3.125%;
+}
+
+.module ul li {
+   padding: 5px 0;
+}
+
+/* --------------------------- FOOTER */
+
+footer#global-footer .center {
+   border-top: 1px solid rgba(256,256,256,.1);
+   padding-top: 3.125%;
+   margin: 3.125%;
+}
+
+footer#global-footer nav {
+   padding: 10px 0;
+}
+
+footer#global-footer nav li {
+   padding: 5px 0;
+}
+
+/* --------------------------- FIXES */
+
+.text, .textarea, .select, .file {
+   color: #333333;
+}
+
+#rb_list-view,
+.step-1 h2,
+.search_block {
+   padding: 0;
+}
+
+.step-1 {
+   float: none;
+   width: auto;
+}
+
+#rb_list-view .rb_report {
+   color: #666666;
+   background: #fff;
+   margin: 10px 0;
+}
+
+.r_details h3 a.r_title {
+   color: #333333;
+   text-decoration: underline;
+}
+
+.content-block {
+   color: #333333;
+   text-align: left;
+   margin-bottom: 3.125%;
+}
+
+.content-block h5 {
+   color: #333333;
+   font-size: 1.2em;
+   text-transform: uppercase;
+   border-bottom: 1px dotted rgba(256,256,256,.5);
+   margin-bottom: 3.125%;
+}
+
+.content-block table.table-list th,
+.content-block table.table-list td {
+   padding: 3px 10px 3px 0;
+}
+
+.content-block a.more {
+   display: block;
+   font-size: 0.9em;
+   padding: 10px 0;
+}
+
+.content-block a.more:after {
+   content: ' >';
+}
+
+#content .big-block {
+   text-align: left;
+   padding: 0;
+}
+
+#content .big-block h1 {
+   font-size: 1.7em;
+   padding: 15px 0;
+}
+
+#filters-box {
+   float: none;
+   width: auto;
+   margin-left: 3.125%;
+}
+
+#filters-box h2,
+.report-when-where {
+   color: #fff;
+   margin-bottom: 10px;
+}
+
+#accordion {
+   background: #fff;
+}
+
+.alert_response, .thanks_msg,
+ul.inline-links li a {
+   color: #666666;
+}
+
+.alert_response a, .thanks_msg a {
+   color: #333333;
+   text-decoration: underline;
+}
+
+.report_comment, .contact {
+   color: #666666;
+   padding: 3.125%;
+   margin: 3.125%;
+}
+
+.report_optional h3,
+.report_optional h4,
+div.comment-block,
+div.comment-block h5,
+.search_info {
+   color: #666666;
+}
+
+.search_date,
+ul.pager li {
+   color: #e6e6e6;
+}
+
+.step-1 .map .map-holder {width: 100%;}
+
+.report_map,
+.step-1 .map {width: auto;}
+
+div.green-box, div.red-box {margin: 1.041666667%;}
+
+div.footer-credits {
+   float: none;
+   margin: 0;
+}
+
+/* --- ####### LARGE VIEWPORT ###### --- */
+@media screen and (min-width: 768px) {
+
+.center {
+   width: 85%;
+   margin: 0 auto;
+}
+
+[class^="col_"], [class*=" col_"] {
+   float: left;
+   margin: 0 1.041666667%;
+}
+
+.col_1 {
+   width: 6.25%;
+}
+
+.col_2 {
+   width: 14.58333333%;
+}
+
+.col_3 {
+   width: 22.91666667%;
+}
+
+.col_4 {
+   width: 31.25%;
+}
+
+.col_6 {
+   width: 47.91666667%;
+}
+
+.col_8 {
+   width: 64.58333333%;
+}
+
+.col_9 {
+   width: 72.91666667%;
+}
+
+.col_10 {
+   width: 81.25%;
+}
+
+.col_12 {
+   float: none;
+   width: 97.916666667%;
+}
+
+/* --------------------------- GLOBAL HEADER */
+
+header#global-header hgroup {
+   float: left;
+   text-align: left;
+   padding: 3.125% 0;
+}
+
+header#global-header #site-data {
+   display: block;
+   text-align: left;
+   padding: 3.125% 0;
+}
+
+header#global-header #site-data p {
+   padding: 5px 0;
+}
+
+header#global-header nav#global-menu {
+   width: 66.6666667%;
+   margin: 0;
+}
+
+header#global-header nav#global-menu ul {
+   display: block;
+}
+
+header#global-header nav#global-menu select {
+   display: none;
+}
+
+header#global-header nav#global-menu ul li a {
+   display: block;
+   float: left;
+   font-size: 1.15em;
+   padding: 12px 15px;
+}
+
+header#global-header nav#global-menu ul li a.active {
+   background: #404040;
+}
+
+header#global-header #global-search {
+   padding: 7px 0;
+}
+
+header#global-header #global-search .search-form input.text {
+   width: 100%;
+}
+
+header#global-header #global-search > div {
+   float: left;
+   width: 50%;
+}
+
+/* --------------------------- CONTENT */
+
+#content .center {
+   padding: 1px 0;
+}
+
+#content #map-container {
+   margin: 1.0416667%;
+}
+
+#content #map {
+   height: 400px;
+}
+
+#content #map-controls > div {
+   margin: 1.0416667%;
+}
+
+/* --------------------------- MODULES */
+
+#modules {
+   margin: 1.041666667% 0;
+}
+
+.module p,
+.module ul {
+   font-size: 1.1em;
+}
+
+/* --------------------------- FOOTER */
+
+footer#global-footer .center {
+   margin: 40px auto;
+}
+
+footer#global-footer .footer-credits {
+   float: left;
+}
+
+footer#global-footer nav {
+   float: right;
+   padding: 3px 10px;
+}
+
+footer#global-footer nav li {
+   display: inline;
+   padding: 5px 10px;
+}
+
+/* --------------------------- FIXES */
+
+.big-block {
+   padding: 0;
+}
+
+div.content-block {
+   float: left;
+   width: 29.1666667%;
+   text-align: left;
+   padding: 1.041666667%;
+   margin: 0 1.041666667%;
+}
+
+.content-block h5 {
+   padding: 1.041666667% 0;
+   margin-bottom: 1.041666667%;
+}
+
+#reports-box {
+   width: 72.91666667%;
+}
+
+#filters-box {
+   float: left;
+   width: 22.91666667%;
+   margin-left: 1.041666667%;
+}
+
+.report_comment, .contact,
+.report_detail .r_verified, .report_detail .r_unverified {
+   margin: 1.041666667%;
+}
+
+}
